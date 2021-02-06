@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="en-form.css">
+</head>
+<body>
+    <div class="login">
+        <button class="login-btn" id="log-btn" value="reload"><p>login</p></button>
+    </div>
+    <div class="pop-up">
+        <p class="close"> close</p>
+        <form action="#" name="form" class="enqry-form">
+            <div class="container" id="step-1">
+                <div class="content">
+                    <p class="head-1">Get in touch</p>
+                    <p class="para-1">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+                    <div class="process-bar">
+                        <span class="process1">1</span>
+                        <span class="process2">2</span>
+                        <i class="fa fa-check process3"></i>
+                    </div>
+                    <p class="e-type">Enquiry type</p>
+                    <select class="slt-en" id="select" required="">
+                        <option>Select enquiry type</option>
+                        <option>General enquiry</option>
+                        <option>Personal enquiry</option>
+                        <option>Job enquiry</option>
+                        <option>Family enquiry</option>
+                    </select><span id="slt">*field is empty</span><br>
+                    <p class="etr-msg">Your Message</p>
+                    <textarea id="txt" class="txt-area" cols="50" rows="10" placeholder="Start typing......" required=""></textarea>
+                    <span id="slt1">*field is empty</span>
+                    <div class="msg-btn">
+                        <button onclick="return validate()" type="submit" id="page-2">CONFIRM MESSAGE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container-1" id="step-2">
+                <div class="content-1">
+                    <p class="head-2">Get in touch</p>
+                    <p class="para-2">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+                    <div class="process-bar-1">
+                        <p class="process-1">1</p>
+                        <p class="process-2">2</p>
+                        <i class="fa fa-check process-3"></i>
+                    </div>
+                    <div class="detail1">
+                        <div class="f-l-name">
+                            <div class="fname">
+                                <p class="f-name">First name</p>
+                                <input class="fname-input" type="text" id="first" required=""><br>
+                                <span id="fn">*field is empty</span>
+                            </div>
+                            <div class="lname">
+                                <label class="l-name">Last name</label>
+                                <input class="lname-input" type="text" id="last" required=""><br>
+                                <span id="ln">*field is empty</span>
+                            </div>
+                        </div>
+                        <div class="detail2">
+                            <p class="mail">Email</p>
+                            <input class="mail-input" type="email" placeholder="e.g-name@domain.com" id="email" required="">
+                            <span id="em">*field is empty</span>
+                            <p class="pno">Telephone</p>
+                            <input class="pno-input" type="number" placeholder="e.g-0123456789" id="mobile" required="">
+                            <span id="mob">*field is empty</span>
+                        </div>
+                        <div class="detail3">
+                            <input class="check-box" type="checkbox" id="checkbox">
+                            <label class="t-c">I confirm that on submitting this form I am consenting to company storing and using the information
+                            detailed above. Information on this can be found on in our privacy policy.</label>
+                        </div>
+                    </div>
+                    
+                    <div class="msg-btn-1"> 
+                        <button type="submit" class="bk-btn"> < BACK</button>
+                        <button onclick="return validates()" type="submit" class="send-btn" id="page-3">SEND MESSAGE</button></div>
+                </div>
+            </div>
+            <div class="container-2" id="step-3">
+                <div class="content-2">
+                    <div class="f-check">
+                        <i class="fa fa-check process-f"></i>
+                    </div>
+                    <p class="tqs-msg">Thank you for your message.</p>
+                    <p class="end-msg">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</p>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
